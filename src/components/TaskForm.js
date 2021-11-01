@@ -21,7 +21,7 @@ function TaskForm() {
         e.preventDefault();        
 
         if(validation()===true){
-            const newTask = { taskTitle:task, isComplite:0 };
+            const newTask = { taskTitle:task, isComplite:false };
             dispatch(addTask(newTask));
             setTask('');
         }
