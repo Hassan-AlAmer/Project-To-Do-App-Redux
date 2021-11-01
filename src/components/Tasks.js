@@ -4,16 +4,19 @@ import TaskList from "./TaskList";
 import {Row} from 'react-bootstrap';
 import { removeTask } from "../actions/taskActions";
 
-function Tasks() {
+function Tasks({handleUpdate, handleCancelUpdate}) {
     const tasks = useSelector((state) => state.tasks);
     const dispatch=useDispatch();
-    console.log(tasks);
+
     const handleDelete =(index)=>{
-        dispatch(removeTask(index));      
+        dispatch(removeTask(index));
+        handleCancelUpdate();   
     }
+    
+    
     return (
-        <Row>
-            <TaskList tasks={tasks} handleDelete={handleDelete}/>
+        <Row className="list-cont">
+            <TaskList tasks={tasks} handleDelete={handleDelete} handleUpdate={handleUpdate}/>
         </Row>
     )
 }

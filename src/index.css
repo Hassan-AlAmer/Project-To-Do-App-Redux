@@ -23,3 +23,13 @@ body {
   background-color: #009688;
   border-color: #009688;
 }
+
+.app-title{
+  background-color: #16ABF8;
+  text-shadow: 1px 1px 5px #00000090;
+}
+.list-cont{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 430px;
+}

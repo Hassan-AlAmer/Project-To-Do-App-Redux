@@ -11,10 +11,10 @@ export const addTask = task => {
       payload: { index }
     };
   };
-  export const updateTask = task => {
+  export const updateTask = (index, title) => {
     return {
       type: "UPDATE_TASK",
-      payload: { task }
+      payload: { index, title }
     };
   };
   export const compliteTask = (checked, index) => {
