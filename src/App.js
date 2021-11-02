@@ -34,7 +34,7 @@ const handleCancelUpdate=()=>{
               <Col><Tasks handleUpdate={handleUpdate} handleCancelUpdate={handleCancelUpdate}/></Col>
             </Row>
             <Row>
-              <Col><p className="fs-5 mb-0 text-center">Done by <a href="https://github.com/Hassan-AlAmer" className="link-info" target="_blank">Hassan AlAmer</a></p></Col>
+              <Col><p className="fs-5 mb-0 text-center">Done by <a href="https://github.com/Hassan-AlAmer" className="link-info" target="_blank" rel="noreferrer">Hassan AlAmer</a></p></Col>
             </Row>
           </Col>
         </Row>

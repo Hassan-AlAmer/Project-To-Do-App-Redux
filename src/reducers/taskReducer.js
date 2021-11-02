@@ -6,7 +6,6 @@ const tasksReducer = (tasks = [], action) => {
       case "REMOVE_TASK":{
         let newTasks = [...tasks];
         newTasks.splice(action.payload.index, 1);
-        console.log(newTasks);
         return newTasks;
       }
       case "UPDATE_TASK":{
